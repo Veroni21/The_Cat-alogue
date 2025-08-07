@@ -1,0 +1,88 @@
+/* Reset & base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  height: 100%;
+}
+
+/* Background */
+body {
+  background: url("images/cat_welcome.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Welcome container */
+.welcome-container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideFadeIn 1.5s ease forwards;
+}
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Heading & Text */
+.welcome-container h1 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: #000000;
+  animation: fadeInUp 1s ease 0.5s forwards;
+  opacity: 0;
+}
+
+.welcome-container p {
+  font-size: 22px;
+  color: #666;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease 0.8s forwards;
+  opacity: 0;
+}
+
+/* Button */
+.explore-btn {
+  text-decoration: none;
+  padding: 15px 30px;
+  background: #33c2f6;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  animation: fadeInUp 1s ease 1s forwards;
+  opacity: 0;
+}
+
+.explore-btn:hover {
+  background: #e85c50;
+  transform: scale(1.05);
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

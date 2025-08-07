@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cat Breeds Info</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Pawtraits of the Purrfect</h1>
+  <div class="grid">
+    <div class="card" onclick="openModal('siamese')">
+      <img src="images/siamese1.jpg" alt="Siamese Cat" />
+      <p class="breed-name">Siamese</p>
+    </div>
+
+    <div class="card" onclick="openModal('persian')">
+      <img src="images/persian.jpg" alt="Persian Cat" />
+        <p class="breed-name">Persian</p>
+    </div>
+
+    <div class="card" onclick="openModal('mainecoon')">
+      <img src="images/mainecoon1.jpg" alt="Mainecoon Cat" />
+      <p class="breed-name">Mainecoon Cat</p>
+    </div>
+
+    <div class="card" onclick="openModal('bengal')">
+      <img src="images/bengal.jpg" alt="Bengal Cat" />
+      <p class="breed-name">Bengal</p>
+    </div>
+
+    <div class="card" onclick="openModal('ragdoll')">
+      <img src="images/ragdoll.jpg" alt="Ragdoll Cat" />
+      <p class="breed-name">Ragdoll</p>
+    </div>
+
+    <div class="card" onclick="openModal('britishshorthair')">
+      <img src="images/british_short.jpg" alt="Britishshorthair Cat" />
+      <p class="breed-name">Britishshorthair</p>
+    </div>
+
+    <div class="card" onclick="openModal('sphynx')">
+      <img src="images/sphynx.jpg" alt="Sphynx Cat" />
+      <p class="breed-name">Sphynx</p>
+    </div>
+
+    <div class="card" onclick="openModal('abyssinian')">
+      <img src="images/abyssinian.jpg" alt="Abyssinian Cat" />
+      <p class="breed-name">Abyssinian</p>
+    </div>
+
+    <div class="card" onclick="openModal('scottishfold')">
+      <img src="images/Scottishfold.jpg" alt="Scottishfold Cat" />
+      <p class="breed-name">Scottishfold</p>
+    </div>
+
+    <div class="card" onclick="openModal('birman')">
+      <img src="images/birman.jpg" alt="Birman Cat" />
+      <p class="breed-name">Birman</p>
+    </div>
+
+    <div class="card" onclick="openModal('norwegianforest')">
+        <img src="images/norwegianforest.jpg" alt="Norwegian Forest" />
+        <p class="breed-name">Norwegian Forest</p>
+    </div>
+
+    <div class="card" onclick="openModal('orientalshorthair')">
+        <img src="images/orientalshorthair.jpg" alt="Oriental Shorthair" />
+        <p class="breed-name">Oriental Shorthair</p>
+    </div>
+    <div class="card" onclick="openModal('turkishangora')">
+        <img src="images/turkishangora.jpg" alt="Turkish Angora" />
+        <p class="breed-name">Turkish Angora</p>
+    </div>
+    <div class="card" onclick="openModal('russianblue')">
+        <img src="images/russianblue.jpg" alt="Russian Blue" />
+        <p class="breed-name">Russian Blue</p>
+    </div>
+    <div class="card" onclick="openModal('devonrex')">
+        <img src="images/devonrex.jpg" alt="Devon Rex" />
+        <p class="breed-name">Devon Rex</p>
+    </div>
+    <div class="card" onclick="openModal('tonkinese')">
+        <img src="images/tonkinese.jpg" alt="Tonkinese" />
+        <p class="breed-name">Tonkinese</p>
+    </div>
+    <div class="card" onclick="openModal('chartreux')">
+        <img src="images/chartreux.jpg" alt="Chartreux" />
+        <p class="breed-name">Chartreux</p>
+    </div>
+    <div class="card" onclick="openModal('manx')">
+        <img src="images/manx.jpg" alt="Manx" />
+        <p class="breed-name">Manx</p>
+    </div>
+    <div class="card" onclick="openModal('savannah')">
+        <img src="images/savannah.jpg" alt="Savannah" />
+        <p class="breed-name">Savannah</p>
+    </div>
+    <div class="card" onclick="openModal('balinese')">
+        <img src="images/balinese.jpg" alt="Balinese" />
+        <p class="breed-name">Balinese</p>
+    </div>
+    <!-- Add more breeds as needed -->
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">❌</span>
+      <img id="modal-img" src="" alt="Cat" />
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
